@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson-16</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header></header>
+		<main>
+			<div class="appointment">
+				<div class="appointment__container">
+					<div class="appointment__content">
+						<div class="appointment__itmes">
+							<div class="appointment__form form-appointment">
+								<h2 class="form-appointment__title">Make an appointment</h2>
+								<form class="form-appointment__body" action="#">
+									<div class="form-appointment__registration registration-form">
+										<input class="registration-form__username" required type="text" name="username" placeholder="Name" value="" autocomplete="off">
+										<input class="registration-form__email" required type="email" name="email" placeholder="Email" value="" autocomplete="off">
+										<input class="registration-form__tel" required type="tel" name="telephone number" placeholder="Telephone Number" value="" autocomplete="off">
+										<select class="registration-form__select" required name="select">
+											<option selected disabled value="">Select Service</option>
+											<option value="1">Pet Boarding (No Cages)</option>
+											<option value="2">Pet Daycare</option>
+											<option value="3">Pet Day Spa & Grooming</option>
+											<option value="4">Custom Meal Plans</option>
+											<option value="5">Pet Training</option>
+											<option value="6">Shop Our Store!</option>
+										</select>
+										<textarea class="registration-form__paragraph" name="text" placeholder="Tell us about your puppers include his/her name"></textarea>
+									</div>
+									<div class="form-appointment__button button">
+										<button class="button__body" type="submit">Make an Appointment</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="shopping-cart">
+				<div class="shopping-cart__container-page-2">
+					<div class="shopping-cart__content">
+						<div class="shopping-cart__form form-shopping-cart">
+							<div class="form-shopping-cart__header header-form-shopping-cart">
+								<h2 class="header-form-shopping-cart__title">Summary</h2>
+								<h3 class="header-form-shopping-cart__sub-title">Estimate Shipping and Tax</h3>
+								<p class="header-form-shopping-cart__paragraph">Enter your destination to get a shipping estimate.</p>
+							</div>
+							<form class="form-shopping-cart__body body-form-shopping-cart" action="#">
+								<div class="body-form-shopping-cart__adress item-form">
+									<label class="item-form__label" for="country">Country</label>
+									<select class="item-form__select" name="country" id="country" required>
+										<option selected disabled value="">Select country...</option>
+										<option value="2">Australia</option>
+										<option value="3">Netherlands</option>
+										<option value="4">Sweden</option>
+										<option value="5">Austria</option>
+										<option value="6">India</option>
+									</select>
+									<label class="item-form__label" for="state">State</label>
+									<input class="item-form__input" type="text" name="state" id="state" required value="" autocomplete="off">
+									<label class="item-form__label" for="zip">Zip/Postal Code</label>
+									<input class="item-form__input" type="number" name="postal code" id="zip" required value="" autocomplete="off">
+								</div>
+								<div class="body-form-shopping-cart__delivery item-form">
+									<label class="item-form__label" for="standard-rate">Standard Rate</label>
+									<div class="item-form__radiobuttons radiobuttons">
+										<input class="radiobuttons__input" type="radio" name="delivery" id="standard-rate" checked>
+										<label class="radiobuttons__label" for="standard-rate">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+									</div>
+									<label class="item-form__label" for="from-store">Pickup from store</label>
+									<div class="item-form__radiobuttons radiobuttons">
+										<input class="radiobuttons__input" type="radio" name="delivery" id="from-store" checked>
+										<label class="radiobuttons__label" for="from-store">1234 Street Adress City Address, 1234 $0.00</label>
+									</div>
+								</div>
+								<div class="body-form-shopping-cart__discond item-form">
+									<div class="header-form-shopping-cart header-form-shopping-cart_padding">
+										<h3 class="header-form-shopping-cart__sub-title">Apply Discount Code</h3>
+									</div>
+									<label class="item-form__label" for="discond">Enter discount code</label>
+									<input class="item-form__input" type="number" name="discond code" id="discond" required value="" autocomplete="off" placeholder="Enter Discount code">
+								</div>
+								<div class="body-form-shopping-cart__button button-store">
+									<button class="button-store__body" type="submit">Apply Discount</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="registered">
+				<div class="registered__container-page-2">
+					<div class="registered__content">
+						<form class="registered__form form-registered" action="#">
+							<div class="form-registered__header">
+								<h3 class="form-registered__title">Registered Customers</h3>
+								<p class="form-registered__paragraph">If you have an account, sign in with your email address.</p>
+							</div>
+							<div class="form-registered__login item-form">
+								<label class="item-form__label" for="email">Email <span class="item-form__label-color">*</span></label>
+								<input class="item-form__input" id="email" type="email" name="email" value="" required autocomplete="off" placeholder="Your Name">
+								<label class="item-form__label" for="pass">Password <span class="item-form__label-color">*</span></label>
+								<input class="item-form__input" id="pass" type="password" name="password" value="" required autocomplete="off" placeholder="Your Name">
+							</div>
+							<div class="form-registered__upload">
+								<button class="form-registered__button" type="submit">Sign In</button>
+								<a class="form-registered__link" href="https://www.google.com/" target="_blank">Forgot Your Password?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+	</div>
+
+</body>
+
+</html>

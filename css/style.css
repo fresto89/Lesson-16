@@ -1,0 +1,536 @@
+/* &display=swap */
+
+@import "null.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+/* ================================================================ */
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+	margin: 0px auto;
+}
+/* ================================================================ */
+
+.main {
+	flex-grow: 1;
+}
+
+[class$="__container"] {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+	color: #fff;
+	box-sizing: content-box;
+	max-width: 1020px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+[class$="__container-page-2"] {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 150%;
+	box-sizing: content-box;
+	max-width: 1400px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	color: #000;
+}
+
+input,
+textarea,
+select,
+button {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	color: inherit;
+	background-color: inherit;
+	letter-spacing: inherit;
+}
+
+textarea:focus::placeholder,
+input:focus::placeholder {
+	opacity: 0;
+}
+
+/*===============Appointment BLOCK START========================*/
+
+[class^="registration-form__"]::placeholder {
+	font-family: "Roboto", sans-serif;
+	line-height: 150%;
+	color: #fff;
+	letter-spacing: 0.15px;
+}
+
+.appointment {
+	background: url("../img/Phone-form-1.png") center / cover no-repeat;
+}
+
+.appointment__content {
+	padding: 130px 0px 210px 0px;
+}
+
+.appointment__itmes {
+	display: flex;
+}
+
+.appointment__form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: #5d62b5;
+	border-radius: 40px;
+	padding: 76px 57px 76px 58px;
+	flex: 0 1 57.35%;
+	min-width: 350px;
+}
+
+.form-appointment__title {
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 117%;
+	text-align: center;
+}
+
+.form-appointment__title:not(:last-child) {
+	padding-bottom: 48px;
+}
+
+.form-appointment__registration {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 20.9px;
+	row-gap: 22px;
+}
+
+.form-appointment__registration:not(:last-child) {
+	padding-bottom: 30px;
+}
+
+.appointment__form {
+	box-shadow: 4px 5px 8px 0.2px rgba(0, 0, 0, 0.356);
+}
+
+[class^="registration-form__"] {
+	border: 2px solid #fff;
+	border-radius: 10px;
+	opacity: 0.8;
+	background-color: #5d62b5;
+	padding: 17px 23.58px 15px 23.58px;
+	flex: 0 1 47.66%;
+	min-width: 10px;
+	flex-grow: 1;
+}
+
+[class^="registration-form__"]:focus {
+	outline: 2px solid #fff;
+	opacity: 1;
+}
+
+.registration-form__paragraph {
+	flex: 0 0 100%;
+	min-height: 180px;
+	resize: none;
+}
+
+.form-appointment__button {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.button__body {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 200%;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 0.15px;
+	border-radius: 8px;
+	background-color: #f2726f;
+	box-shadow: 0px 5px 8px 0.2px rgba(0, 0, 0, 0.356);
+	padding: 13px 34px 13px 34px;
+	cursor: pointer;
+}
+
+.button__body:hover {
+	animation-name: form-button-hover;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes form-button-hover {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	100% {
+		transform: translate(0px, 1px);
+		box-shadow: inset 5px 5px 20px 20px rgba(0, 0, 0, 0.072), 0px 4px 7px 0.2px rgba(0, 0, 0, 0.356);
+	}
+}
+
+.button__body:active {
+	animation-name: form-button-active;
+	animation-duration: 0.1s;
+}
+
+@keyframes form-button-active {
+	0% {
+		transform: translate(0px, 1px);
+		box-shadow: inset 5px 5px 20px 20px rgba(0, 0, 0, 0.072), 0px 4px 7px 0.2px rgba(0, 0, 0, 0.356);
+	}
+	100% {
+		transform: translate(0px, 2px);
+		box-shadow: inset 1px 1px 50px 1px rgba(0, 0, 0, 0.362), 0px 1px 7px 0.2px rgba(0, 0, 0, 0.356);
+	}
+}
+
+/*===============Appointment BLOCK END========================*/
+
+/*===============Shopping-cart BLOCK START========================*/
+
+.shopping-cart {
+	background-color: #ececec;
+}
+
+.shopping-cart__content {
+	display: flex;
+	justify-content: center;
+}
+
+.shopping-cart__form {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 31.86%;
+	background-color: #f5f7ff;
+	padding: 17.51px 30px 24px 30px;
+}
+
+.form-shopping-cart__header:not(:last-child) {
+	margin-bottom: 12.43px;
+}
+
+.header-form-shopping-cart__title {
+	font-size: 24px;
+}
+
+.header-form-shopping-cart__title:not(:last-child) {
+	padding-bottom: 18.57px;
+}
+
+.header-form-shopping-cart__sub-title {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.header-form-shopping-cart__sub-title:not(:last-child) {
+	padding-bottom: 12.43px;
+}
+
+.header-form-shopping-cart__paragraph {
+	font-weight: 400;
+	color: #666666;
+	max-width: 287px;
+}
+
+.form-shopping-cart__body {
+	display: flex;
+	flex-direction: column;
+}
+
+.body-form-shopping-cart__adress {
+	display: flex;
+	flex-direction: column;
+}
+
+.body-form-shopping-cart__adress:not(:last-child) {
+	margin-bottom: 17.06px;
+}
+
+.item-form__label {
+	display: block;
+	font-size: 13px;
+	line-height: 210%;
+}
+
+.item-form__select,
+.item-form__input {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	line-height: 143%;
+	padding: 13px 17px 13px 17px;
+	border: 1px solid #a2a6b0;
+	border-radius: 4px;
+}
+
+[class^="item-form__label"]:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+[class^="item-form__input"]:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.body-form-shopping-cart__delivery:not(:last-child) {
+	margin-bottom: 29px;
+}
+
+.item-form__radiobuttons {
+	position: relative;
+}
+
+.radiobuttons__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.radiobuttons__label {
+	line-height: 143%;
+	font-weight: 400;
+	display: inline-flex;
+	column-gap: 8px;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+}
+
+.radiobuttons__label::before {
+	content: "";
+	align-self: flex-start;
+	flex: 0 0 21px;
+	height: 21px;
+	border-radius: 50%;
+	border: 2px solid #0156ff;
+	cursor: pointer;
+}
+
+.radiobuttons__label::after {
+	content: "";
+	height: 13px;
+	width: 13px;
+	border-radius: 50%;
+	background-color: #0156ff;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	transform: scale(0);
+	transition-duration: 0.3s;
+}
+
+.radiobuttons__input:focus + .radiobuttons__label::before {
+	box-shadow: 0 0 10px rgb(0, 183, 255);
+}
+
+.radiobuttons__input:checked + .radiobuttons__label::after {
+	transform: scale(1);
+}
+
+.header-form-shopping-cart_padding:not(:last-child) {
+	margin-bottom: 11px;
+}
+
+.body-form-shopping-cart__discond {
+	display: flex;
+	flex-direction: column;
+}
+
+.body-form-shopping-cart__discond:not(:last-child) {
+	margin-bottom: 19px;
+}
+
+.button-store__body {
+	color: #0156ff;
+	border: 2px solid #0156ff;
+	border-radius: 50px;
+	padding: 13px 0;
+	cursor: pointer;
+	position: relative;
+	z-index: 100;
+}
+
+.button-store__body:hover,
+.button-store__body:focus {
+	transition: 0.5s;
+	color: #000;
+	text-decoration: underline;
+	border: 2px solid #000000;
+}
+
+.body-form-shopping-cart__button {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+	border-radius: 50px;
+	z-index: 50;
+}
+
+.body-form-shopping-cart__button::before {
+	overflow: hidden;
+	content: "";
+	width: 50%;
+	height: 100%;
+	background-color: #0156ff;
+	display: inline-block;
+	position: absolute;
+	border-radius: 50px 0px 0px 50px;
+	opacity: 0.3;
+	transform: translate(-100%, 0px);
+	z-index: 20;
+}
+
+.body-form-shopping-cart__button:hover::before {
+	animation-name: button-discond-anime-left-start;
+	animation-fill-mode: forwards;
+	animation-duration: 0.5s;
+}
+
+@keyframes button-discond-anime-left-start {
+	0% {
+		transform: translate(-100%, 0px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
+
+.body-form-shopping-cart__button::before {
+	animation-name: button-discond-anime-left-end;
+	animation-duration: 0.5s;
+}
+
+@keyframes button-discond-anime-left-end {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	100% {
+		transform: translate(-100%, 0px);
+	}
+}
+
+.body-form-shopping-cart__button::after {
+	overflow: hidden;
+	content: "";
+	width: 50%;
+	height: 100%;
+	background-color: #0156ff;
+	position: absolute;
+	border-radius: 0px 50px 50px 0px;
+	opacity: 0.3;
+	transform: translate(200%, 0px);
+	z-index: 20;
+}
+
+.body-form-shopping-cart__button:hover::after {
+	animation-name: button-discond-anime-right-start;
+	animation-fill-mode: forwards;
+	animation-duration: 0.5s;
+}
+
+@keyframes button-discond-anime-right-start {
+	0% {
+		transform: translate(200%, 0px);
+	}
+	100% {
+		transform: translate(100%, 0px);
+	}
+}
+
+.body-form-shopping-cart__button::after {
+	animation-name: button-discond-anime-right-end;
+	animation-duration: 0.5s;
+}
+
+@keyframes button-discond-anime-right-end {
+	0% {
+		transform: translate(100%, 0px);
+	}
+	100% {
+		transform: translate(200%, 0px);
+	}
+}
+
+/*===============Shopping-cart BLOCK END========================*/
+
+/*===============Registered-cart BLOCK START========================*/
+
+.registered__content {
+	display: flex;
+	justify-content: center;
+}
+
+.registered__form {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 40.29%;
+	background-color: #f5f7ff;
+	padding: 37px 57.5px 40.96px 57.5px;
+}
+
+.form-registered__header {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-registered__header:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.form-registered__title {
+	font-size: 18px;
+}
+
+.form-registered__title:not(:last-child) {
+	padding-bottom: 12px;
+}
+
+.form-registered__paragraph {
+	line-height: 214%;
+	font-weight: 300;
+}
+
+.form-registered__login {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-registered__login:not(:last-child) {
+	margin-bottom: 30.47px;
+}
+
+.item-form__label-color {
+	color: #c94d3f;
+}
+
+.form-registered__upload {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 23px;
+	align-items: center;
+}
+
+.form-registered__button {
+	text-align: center;
+	color: #fff;
+	background-color: #0156ff;
+	border-radius: 50px;
+	padding: 15px 43px;
+	cursor: pointer;
+}
+
+.form-registered__link {
+	font-weight: 400;
+	line-height: 143%;
+	color: #0156ff;
+}
+
+/*===============Registered-cart BLOCK END========================*/
